@@ -103,8 +103,7 @@ public class Game extends MovieList { // Game class uses method created in Movie
             System.out.println("\nGAME OVER! YOU LOSE!");
         } else if (win) { // Player wins the game
             System.out.println("\nThe movie's title '" + titleToGuess.toUpperCase() + "' is correct.");
-            System.out.println("\no" +
-                    "CONGRATULATIONS! YOU WIN!");
+            System.out.println("\nCONGRATULATIONS! YOU WIN!");
         } else { // Game still goes on
             System.out.println("\nYou are guessing: " + titleToGuess);
             System.out.println("You have guessed (" + wrongGuesses + ") wrong letters:" + wrongLetters);
