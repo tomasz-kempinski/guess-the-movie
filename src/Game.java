@@ -99,16 +99,17 @@ public class Game extends MovieList { // Game class uses method created in Movie
     // Method that displays messages accordingly to the current game status
     void showMessages() {
         if (wrongGuesses == 10) { // Limit od wrong guesses is reached and the game is lost
-            System.out.println("You have guessed only: '" + titleToGuess + "'");
-            System.out.println("Game Over! You lose.");
+            System.out.println("\nYou have guessed only: '" + titleToGuess + "'");
+            System.out.println("\nGAME OVER! YOU LOSE!");
         } else if (win) { // Player wins the game
-            System.out.println("The movie's title '" + titleToGuess.toUpperCase() + "' is correct.");
-            System.out.println("Congratulations! You win!");
+            System.out.println("\nThe movie's title '" + titleToGuess.toUpperCase() + "' is correct.");
+            System.out.println("\no" +
+                    "CONGRATULATIONS! YOU WIN!");
         } else { // Game still goes on
-            System.out.println("You are guessing: " + titleToGuess);
+            System.out.println("\nYou are guessing: " + titleToGuess);
             System.out.println("You have guessed (" + wrongGuesses + ") wrong letters:" + wrongLetters);
             System.out.println("You have " + (10 - wrongGuesses) + " guesses left.");
-            System.out.print("Guess a letter: ");
+            System.out.print("\nGuess a letter: ");
         }
 
     }
